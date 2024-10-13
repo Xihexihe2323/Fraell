@@ -48,6 +48,13 @@
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
+        .animated-text {
+            animation: textAnimation 2s ease-out;
+        }
+        @keyframes textAnimation {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
         footer {
             margin-top: 30px;
             text-align: center;
@@ -58,14 +65,14 @@
 </head>
 <body>
     <header>
-        <h1>Pembahasan Teknologi</h1>
+        <h1 class="animated-text">Pembahasan Teknologi</h1>
     </header>
     <nav>
         <a href="index.html">Beranda</a>
         <a href="isi.html">Isi</a>
         <a href="kontak.html">Kontak</a>
     </nav>
-    <main>
+    <main class="animated-text">
         <h2>Isi Pembahasan Teknologi</h2>
         <p>Perkembangan teknologi yang pesat memberikan banyak kemudahan, tetapi juga menghadirkan tantangan baru.</p>
         <ul>
