@@ -1,90 +1,43 @@
 <!DOCTYPE html>
 <html lang="id">
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #121212, #1e1e1e);
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+    color: #ffffff;
+    overflow-x: hidden; /* Menghindari scroll horizontal */
+}
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pembahasan Teknologi - Kontak</title>
+    <title>Kontak - Pembahasan Teknologi</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 20px;
-            background: linear-gradient(135deg, #121212, #1e1e1e);
-            background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
-            color: #ffffff;
-            overflow-x: hidden;
-        }
-        header {
-            margin-top: 70px;
-            background: linear-gradient(135deg, #C0392B, #E74C3C);
-            color: white;
-            padding: 20px;
-            text-align: center;
-            border-radius: 10px;
-        }
-        nav {
-            padding: 10px;
-            margin: 20px 0;
-            text-align: center;
-        }
-        nav a {
-            color: #00BFFF;
-            text-decoration: none;
-            padding: 10px 15px;
-            margin: 0 15px;
-            border-radius: 5px;
-            display: inline-block;
-            font-size: 1.1em;
-        }
-        nav a:hover {
-            background-color: #292929;
-        }
-        main {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-            background: #2c2c2c;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-        }
-        .animated-text {
-            animation: textAnimation 2s ease-out;
-        }
-        @keyframes textAnimation {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-        footer {
-            margin-top: 30px;
-            text-align: center;
-            font-size: 0.9em;
-            color: #bbb;
-        }
-        .social-links a {
-            color: #00BFFF;
-            text-decoration: none;
-            margin-right: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="marquee">Selamat datang di website Fraell :)</div>
     <header>
-        <h1 class="animated-text">Kontak Kami</h1>
+        <h1>Pembahasan Teknologi</h1>
     </header>
     <nav>
         <a href="index.html">Beranda</a>
         <a href="isi.html">Isi</a>
+        <a href="penutup.html">Penutup</a>
         <a href="kontak.html">Kontak</a>
     </nav>
-    <main class="animated-text">
-        <h2>Hubungi Kami</h2>
-        <p>Anda dapat menghubungi kami melalui:</p>
-        <ul class="social-links">
-            <li>Email: <a href="mailto:info@website.com">info@website.com</a></li>
-            <li>Facebook: <a href="https://facebook.com" target="_blank">facebook.com/website</a></li>
-            <li>Twitter: <a href="https://twitter.com" target="_blank">twitter.com/website</a></li>
-        </ul>
+    <main>
+        <div id="kontak" class="section">
+            <h2 style="text-align: center;">Kontak Sosial Media</h2>
+            <div class="social-links" style="text-align: center;">
+                <a href="https://instagram.com/Fraell" target="_blank">Instagram</a>
+                <a href="https://facebook.com/Fraell" target="_blank">Facebook</a>
+                <a href="mailto:fraell@example.com">Gmail</a>
+            </div>
+        </div>
     </main>
     <footer>
         <p>© 2024 Fraell. Semua hak dilindungi.</p>
