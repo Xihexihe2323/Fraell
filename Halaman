@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembahasan Teknologi - Isi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <style>
+        /* Style yang sama seperti di halaman index.html */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pembahasan Teknologi</h1>
+    </header>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="isi.html">Isi</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+    <main>
+        <div id="isi" class="section">
+            <h2>Isi Pembahasan Teknologi</h2>
+            <p>Perkembangan teknologi yang pesat memberikan banyak kemudahan, tetapi juga menghadirkan tantangan baru.</p>
+            <!-- Konten dari bagian "isi" sebelumnya -->
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Fraell. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>
