@@ -48,31 +48,43 @@
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
+        .animated-text {
+            animation: textAnimation 2s ease-out;
+        }
+        @keyframes textAnimation {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
         footer {
             margin-top: 30px;
             text-align: center;
             font-size: 0.9em;
             color: #bbb;
         }
+        .social-links a {
+            color: #00BFFF;
+            text-decoration: none;
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Pembahasan Teknologi</h1>
+        <h1 class="animated-text">Kontak Kami</h1>
     </header>
     <nav>
         <a href="index.html">Beranda</a>
         <a href="isi.html">Isi</a>
         <a href="kontak.html">Kontak</a>
     </nav>
-    <main>
-        <h2>Kontak Kami</h2>
-        <p>Hubungi kami melalui media sosial berikut:</p>
-        <div style="text-align: center;">
-            <a href="https://instagram.com/Fraell" target="_blank">Instagram</a>
-            <a href="https://facebook.com/Fraell" target="_blank">Facebook</a>
-            <a href="mailto:fraell@example.com">Gmail</a>
-        </div>
+    <main class="animated-text">
+        <h2>Hubungi Kami</h2>
+        <p>Anda dapat menghubungi kami melalui:</p>
+        <ul class="social-links">
+            <li>Email: <a href="mailto:info@website.com">info@website.com</a></li>
+            <li>Facebook: <a href="https://facebook.com" target="_blank">facebook.com/website</a></li>
+            <li>Twitter: <a href="https://twitter.com" target="_blank">twitter.com/website</a></li>
+        </ul>
     </main>
     <footer>
         <p>© 2024 Fraell. Semua hak dilindungi.</p>
