@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penutup - Pembahasan Teknologi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <style>
+        /* Style yang sama di semua halaman */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #121212, #1e1e1e);
+            background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        .marquee {
+            position: absolute;
+            width: 100%;
+            top: 10px;
+            text-align: center;
+            font-size: 1.5em;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: marquee 10s linear infinite;
+            background: linear-gradient(90deg, #ff6b6b, #f7aef8);
+            border-radius: 10px;
+            padding: 10px 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            color: #ffffff;
+            font-weight: bold;
+            z-index: 1;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(-100%); }
+            50% { transform: translateX(0); }
+            100% { transform: translateX(100%); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        header, main, .section {
+            opacity: 0;
+            animation: fadeIn 0.8s forwards;
+        }
+        header {
+            position: relative;
+            margin-top: 70px;
+            background: linear-gradient(135deg, #C0392B, #E74C3C);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+        header:hover {
+            transform: scale(1.03);
+        }
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        nav {
+            padding: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #00BFFF;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 15px;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.3s;
+            display: inline-block;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            background-color: #292929;
+            transform: translateY(-2px);
+        }
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: #2c2c2c;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        p {
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <div class="marquee">Selamat datang di website Fraell :)</div>
+    <header>
+        <h1>Pembahasan Teknologi</h1>
+    </header>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="isi.html">Isi</a>
+        <a href="penutup.html">Penutup</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+    <main>
+        <div id="penutup" class="section">
+            <h2 style="text-align: center;">Penutup</h2>
+            <p>Teknologi terus berkembang dan membawa perubahan yang signifikan dalam berbagai aspek kehidupan kita. Dari cara kita berkomunikasi hingga cara kita belajar dan berinteraksi, inovasi teknologi tidak hanya mempermudah hidup kita, tetapi juga menghadirkan tantangan yang perlu kita hadapi bersama.</p>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Fraell. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>
