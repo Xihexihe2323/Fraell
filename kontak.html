@@ -73,7 +73,7 @@
         }
         nav a {
             color: #00BFFF;
-            text-decoration: none;
+            text-decoration: none; /* Menghilangkan garis bawah pada tautan */
             padding: 10px 15px;
             margin: 0 15px;
             border-radius: 5px;
@@ -117,9 +117,13 @@
             margin: 0 10px;
             font-size: 1.3em; /* Memperkecil ukuran ikon sedikit */
             transition: transform 0.3s;
-            padding: 12px; /* Ukuran padding dikurangi untuk membuat lingkaran lebih kecil */
+            width: 40px; /* Ukuran lebar */
+            height: 40px; /* Ukuran tinggi */
             border-radius: 50%; /* Membulatkan logo */
-            display: inline-block;
+            display: inline-flex; /* Menggunakan inline-flex untuk memastikan ikon tetap terpusat */
+            align-items: center; /* Menyelaraskan ikon di tengah secara vertikal */
+            justify-content: center; /* Menyelaraskan ikon di tengah secara horizontal */
+            text-decoration: none; /* Menghilangkan garis bawah pada ikon */
         }
         /* Warna khusus untuk setiap logo media sosial dengan latar belakang */
         .social-icons a.facebook {
