@@ -42,6 +42,10 @@
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
+        @keyframes highlight {
+            from { box-shadow: 0 0 0 rgba(0, 123, 255, 0); }
+            to { box-shadow: 0 0 0 5px rgba(0, 123, 255, 1); }
+        }
         header, main, .section {
             opacity: 0;
             animation: fadeIn 0.8s forwards;
@@ -96,6 +100,7 @@
         p {
             line-height: 1.6;
             margin: 15px 0;
+            font-size: 1.2em; /* Ukuran font lebih besar */
         }
         ul {
             list-style: none;
@@ -107,9 +112,13 @@
             padding: 15px;
             margin: 10px 0;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s;
+        }
+        li.card:hover {
+            animation: highlight 0.5s forwards; /* Menambahkan animasi saat hover */
         }
         li.card .highlight {
-            color: #FFC107;
+            color: #007BFF; /* Mengubah warna menjadi biru */
             font-weight: bold;
         }
         footer {
@@ -133,14 +142,14 @@
     </nav>
     <main>
         <div id="isi" class="section">
-            <p>Perkembangan teknologi yang pesat memberikan banyak kemudahan, tetapi juga menghadirkan tantangan baru yang perlu kita hadapi. Mari kita eksplorasi lebih dalam tentang penerapan teknologi di berbagai bidang.</p>
+            <p>Perkembangan teknologi yang pesat memberikan banyak kemudahan, tetapi juga menghadirkan tantangan baru yang perlu kita hadapi. Dengan adanya internet, komunikasi menjadi lebih cepat dan efisien, memungkinkan kita untuk terhubung dengan orang-orang dari seluruh dunia. Namun, kita juga harus waspada terhadap dampak negatif dari teknologi, seperti privasi dan keamanan data. Mari kita eksplorasi lebih dalam tentang penerapan teknologi di berbagai bidang, dan bagaimana kita dapat memanfaatkan teknologi dengan bijak.</p>
         </div>
         <ul>
-            <li class="card"><strong class="highlight">Komunikasi:</strong> Dengan smartphone, kita dapat berkomunikasi dengan siapa saja di seluruh dunia dalam hitungan detik. Aplikasi seperti WhatsApp dan Facebook Messenger memungkinkan kita untuk mengirim pesan teks, gambar, dan video secara real-time.</li>
-            <li class="card"><strong class="highlight">Pendidikan:</strong> E-learning dan platform pendidikan online seperti Coursera dan Khan Academy membuat akses belajar menjadi lebih mudah.</li>
-            <li class="card"><strong class="highlight">Transportasi:</strong> Teknologi telah mengubah cara kita bepergian, dari aplikasi ride-sharing seperti Gojek dan Grab hingga kendaraan listrik yang lebih ramah lingkungan.</li>
-            <li class="card"><strong class="highlight">Kesehatan:</strong> Inovasi dalam teknologi medis telah meningkatkan diagnosis dan perawatan pasien.</li>
-            <li class="card"><strong class="highlight">Keamanan:</strong> Teknologi juga berperan dalam meningkatkan keamanan, baik dalam dunia maya maupun fisik.</li>
+            <li class="card"><strong class="highlight">Komunikasi:</strong> <p>Dengan smartphone, kita dapat berkomunikasi dengan siapa saja di seluruh dunia dalam hitungan detik. Aplikasi seperti WhatsApp dan Facebook Messenger memungkinkan kita untuk mengirim pesan teks, gambar, dan video secara real-time. Selain itu, video call menjadi fitur yang banyak digunakan, terutama di masa pandemi, membuat jarak fisik tidak menjadi halangan untuk berinteraksi.</p></li>
+            <li class="card"><strong class="highlight">Pendidikan:</strong> <p>E-learning dan platform pendidikan online seperti Coursera dan Khan Academy membuat akses belajar menjadi lebih mudah. Dengan adanya berbagai kursus online, siapa pun bisa mendapatkan pendidikan berkualitas tanpa harus pergi ke kampus. Ini sangat membantu bagi mereka yang ingin meningkatkan keterampilan atau mempelajari bidang baru.</p></li>
+            <li class="card"><strong class="highlight">Transportasi:</strong> <p>Teknologi telah mengubah cara kita bepergian, dari aplikasi ride-sharing seperti Gojek dan Grab hingga kendaraan listrik yang lebih ramah lingkungan. Inovasi seperti mobil otonom dan transportasi berbasis aplikasi telah mempercepat perjalanan kita dan mengurangi kemacetan di kota-kota besar.</p></li>
+            <li class="card"><strong class="highlight">Kesehatan:</strong> <p>Inovasi dalam teknologi medis telah meningkatkan diagnosis dan perawatan pasien. Alat kesehatan yang canggih, seperti perangkat pemantauan kesehatan dan telemedicine, memungkinkan dokter untuk memberikan perawatan yang lebih baik dan lebih cepat. Selain itu, penelitian dalam bidang bioteknologi dan obat-obatan terus berkembang, membawa harapan baru untuk mengatasi penyakit yang sulit diobati.</p></li>
+            <li class="card"><strong class="highlight">Keamanan:</strong> <p>Teknologi juga berperan dalam meningkatkan keamanan, baik dalam dunia maya maupun fisik. Sistem keamanan berbasis teknologi, seperti kamera pengawas dan perangkat keamanan pintar, membantu menjaga keselamatan di lingkungan kita. Namun, kita juga harus berhati-hati terhadap potensi ancaman siber yang dapat mengganggu privasi kita.</p></li>
         </ul>
     </main>
     <footer>
