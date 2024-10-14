@@ -111,13 +111,17 @@
             text-align: center;
         }
         .social-icons a {
-            color: #fff;
             margin: 0 10px;
             font-size: 1.5em;
-            transition: color 0.3s, transform 0.3s;
+            transition: transform 0.3s;
         }
+        /* Warna khusus untuk setiap logo media sosial */
+        .social-icons a.facebook { color: #4267B2; }
+        .social-icons a.twitter { color: #1DA1F2; }
+        .social-icons a.instagram { color: #C13584; }
+        .social-icons a.linkedin { color: #0077B5; }
+        
         .social-icons a:hover {
-            color: #00BFFF;
             transform: translateY(-5px);
         }
         footer {
@@ -147,10 +151,10 @@
                 <p>Telepon: +62 123 4567 890</p>
             </div>
             <div class="social-icons">
-                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </main>
