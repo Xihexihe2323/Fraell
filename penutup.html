@@ -34,9 +34,8 @@
             z-index: 1;
         }
         @keyframes marquee {
-            0% { transform: translateX(-100%); }
-            50% { transform: translateX(0); }
-            100% { transform: translateX(100%); }
+            0% { transform: translateX(100%); } /* Start from the right */
+            100% { transform: translateX(-100%); } /* Move to the left */
         }
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
